@@ -12,6 +12,24 @@
 
    Use cases, scope definition, and proposed implementation for a campaign management system.
 
+Definitions
+===========
+
+A production is a large-scale class of processing, including the iterations of the Data Release Production and the Alert Production.
+A campaign is a data processing activity that accomplishes a particular goal.
+It achieves this by executing one or more workflows, which are submissions to a workflow management tool with specific, defined configurations processing specific, defined datasets.
+Those workflow submissions result in the execution of jobs, each of which is a sequence of Tasks that runs on a single worker machine.
+In the Gen3 Middleware, a job is typically a pipeline of PipelineTasks defined by YAML.
+A Task is an instance of the Python pipe_base.Task class, configured by a pex_config.Config instance.
+
+.. figure:: /_static/CampaignManagementDefinitions.png
+   :name: fig-campaign-management-definitions-label
+   :alt: Campaign management definitions
+
+   Campaign managment definitions.
+
+Campaign Management is a tool that assists in the definition, execution, monitoring, and analysis of campaigns.
+
 The Vision
 ==========
 
