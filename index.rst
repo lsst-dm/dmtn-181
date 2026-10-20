@@ -6,14 +6,6 @@ Campaign Management
 
    Use cases, scope definition, and proposed implementation for a campaign management system.
 
-.. TODO: Delete the note below before merging new content to the master branch.
-
-.. note::
-
-   **This technote is not yet published.**
-
-   Use cases, scope definition, and proposed implementation for a campaign management system.
-
 Definitions
 ===========
 
@@ -47,11 +39,12 @@ The configuration information includes a Science Pipelines tag (which in turn im
 This culminates in a series of Batch Production Service (BPS) commands, each representing a workflow submission, that are to be executed, possibly with human analysis in between.
 Each workflow in turn results in multiple jobs being executed on the batch systems.
 Note that the Data Release Production is not expected to be run as a single workflow submission for a variety of reasons:
- * Quantum Graph generation currently takes a long time, particularly as the graph gets more complex; smaller graphs should be non-linearly faster to generate
- * resource limitations such as available scratch space that may be easier for humans to manage than the workflow system
- * global synchronization points that form natural places to break up the overall workflow
- * user intervention points where analysis of what has been completed and potentially patching of code or configuration may be desirable before continuing
- * allowing simpler restart after failure
+
+* Quantum Graph generation currently takes a long time, particularly as the graph gets more complex; smaller graphs should be non-linearly faster to generate
+* resource limitations such as available scratch space that may be easier for humans to manage than the workflow system
+* global synchronization points that form natural places to break up the overall workflow
+* user intervention points where analysis of what has been completed and potentially patching of code or configuration may be desirable before continuing
+* allowing simpler restart after failure
 
 The exclusion list and configuration information is checked into a git repository and tagged.
 The Data Release Lead Campaign Manager, a role in the Execution team, is told to execute the campaign defined by this input data and processing specification.
@@ -64,7 +57,7 @@ A campaign identifier is automatically generated, but the DRLCM provides informa
    :alt: Sketch of a campaign definition screen.
 
    Sketch of a campaign definition screen.
-    
+
 After defining the campaign, the DRLCM can save it or begin execution by running the first BPS command to submit the first workflow.
 (Initially, command execution will be manual, but eventually it may be integrated into the Campaign Management system.)
 
