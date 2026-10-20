@@ -1,0 +1,18 @@
+[technote]
+id = "DMTN-181"
+series_id = "DMTN"
+canonical_url = "https://dmtn-181.lsst.io/"
+github_url = "https://github.com/lsst-dm/dmtn-181"
+github_default_branch = "main"
+date_created = 2021-02-12T10:56:00Z
+organization.name = "Vera C. Rubin Observatory"
+organization.ror = "https://ror.org/048g3cy84"
+license.id = "CC-BY-4.0"
+[[technote.authors]]
+name = {given = "Kian-Tat", family = "Lim"}
+internal_id = "limk"
+orcid = "https://orcid.org/0000-0002-6338-6516"
+[[technote.authors.affiliations]]
+name = "SLAC National Accelerator Laboratory"
+internal_id = "SLAC"
+ror = "https://ror.org/05gzmn429"
