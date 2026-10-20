@@ -50,8 +50,9 @@ name = "SLAC National Accelerator Laboratory"
 internal_id = "SLAC"
 ror = "https://ror.org/05gzmn429"
 [[technote.authors]]
-name = {given = "Robert", family = "Gruendl"}
-internal_id = "gruendlr"
+name = {given = "Robert A.", family = "Gruendl"}
+internal_id = "gruendlra"
+orcid = "https://orcid.org/0000-0002-4588-6517"
 [[technote.authors.affiliations]]
 name = "University of Illinois at Urbana-Champaign"
 internal_id = "NCSA"
