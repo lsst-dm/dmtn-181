@@ -9,6 +9,10 @@ date_updated = 2021-02-12T11:02:56Z
 organization.name = "Vera C. Rubin Observatory"
 organization.ror = "https://ror.org/048g3cy84"
 license.id = "CC-BY-4.0"
+
+[technote.status]
+state = "deprecated"
+
 [[technote.authors]]
 name = {given = "Kian-Tat", family = "Lim"}
 internal_id = "limk"
@@ -17,3 +21,75 @@ orcid = "https://orcid.org/0000-0002-6338-6516"
 name = "SLAC National Accelerator Laboratory"
 internal_id = "SLAC"
 ror = "https://ror.org/05gzmn429"
+[[technote.authors]]
+name = {given = "Yusra", family = "AlSayyad"}
+internal_id = "alsayyady"
+orcid = "https://orcid.org/0009-0008-9216-7516"
+[[technote.authors.affiliations]]
+name = "Princeton University"
+internal_id = "Princeton-Astro"
+ror = "https://ror.org/00hx57361"
+[[technote.authors]]
+name = {given = "James F.", family = "Bosch"}
+internal_id = "boschjf"
+orcid = "https://orcid.org/0000-0003-2759-5764"
+[[technote.authors.affiliations]]
+name = "Princeton University"
+internal_id = "Princeton-Astro"
+ror = "https://ror.org/00hx57361"
+[[technote.authors]]
+name = {given = "Hsin-Fang", family = "Chiang"}
+internal_id = "chiangh"
+orcid = "https://orcid.org/0000-0002-1181-1621"
+[[technote.authors.affiliations]]
+name = "SLAC National Accelerator Laboratory"
+internal_id = "SLAC"
+ror = "https://ror.org/05gzmn429"
+[[technote.authors]]
+name = {given = "Richard", family = "Dubois"}
+internal_id = "duboisr"
+orcid = "https://orcid.org/0009-0002-4679-3192"
+[[technote.authors.affiliations]]
+name = "SLAC National Accelerator Laboratory"
+internal_id = "SLAC"
+ror = "https://ror.org/05gzmn429"
+[[technote.authors]]
+name = {given = "Robert A.", family = "Gruendl"}
+internal_id = "gruendlra"
+orcid = "https://orcid.org/0000-0002-4588-6517"
+[[technote.authors.affiliations]]
+name = "University of Illinois at Urbana-Champaign"
+internal_id = "NCSA"
+ror = "https://ror.org/03g9ch715"
+[[technote.authors]]
+name = {given = "Leanne P.", family = "Guy"}
+internal_id = "guylp"
+orcid = "https://orcid.org/0000-0003-0800-8755"
+[[technote.authors.affiliations]]
+name = "Vera C. Rubin Observatory Project Office"
+internal_id = "RubinObsC"
+ror = "https://ror.org/048g3cy84"
+[[technote.authors]]
+name = {given = "Tim", family = "Jenness"}
+internal_id = "jennesst"
+orcid = "https://orcid.org/0000-0001-5982-167X"
+[[technote.authors.affiliations]]
+name = "Vera C. Rubin Observatory Project Office"
+internal_id = "RubinObs"
+ror = "https://ror.org/048g3cy84"
+[[technote.authors]]
+name = {given = "Robert H.", family = "Lupton"}
+internal_id = "luptonrh"
+orcid = "https://orcid.org/0000-0003-1666-0962"
+[[technote.authors.affiliations]]
+name = "Princeton University"
+internal_id = "Princeton-Astro"
+ror = "https://ror.org/00hx57361"
+[[technote.authors]]
+name = {given = "Colin T.", family = "Slater"}
+internal_id = "slaterct"
+orcid = "https://orcid.org/0000-0002-0558-0521"
+[[technote.authors.affiliations]]
+name = "University of Washington"
+internal_id = "Washington"
+ror = "https://ror.org/00cvxb145"
