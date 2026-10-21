@@ -6,6 +6,10 @@ Campaign Management
 
    Use cases, scope definition, and proposed implementation for a campaign management system.
 
+.. warning::
+
+   This document has been obsoleted by future design work, an outline of which is described in DMTN-309 :cite:`DMTN-309`.
+
 Definitions
 ===========
 
