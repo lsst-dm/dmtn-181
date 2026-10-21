@@ -17,7 +17,7 @@ A production is a large-scale class of processing, including the iterations of t
 A campaign is a data processing activity that accomplishes a particular goal.
 It achieves this by executing one or more workflows, which are submissions to a workflow management tool with specific, defined configurations processing specific, defined datasets.
 Those workflow submissions result in the execution of jobs, each of which is a sequence of Tasks that runs on a single worker machine.
-In the Gen3 Middleware, a job is typically a pipeline of PipelineTasks defined by YAML.
+In the Gen3 Middleware :cite:`2022SPIE12189E..11J`, a job is typically a pipeline of PipelineTasks defined by YAML.
 A Task is an instance of the Python pipe_base.Task class, configured by a pex_config.Config instance.
 
 .. figure:: /_static/CampaignManagementDefinitions.png
@@ -36,11 +36,11 @@ To help illustrate the proposed role and scope of a Campaign Management system, 
 Data Release
 ------------
 
-The Data Release Board determines the configurations and datasets to be processed for a release, specifying that certain input images are to be excluded.
+The Data Release Board :cite:`RTN-052` determines the configurations and datasets to be processed for a release, specifying that certain input images are to be excluded.
 The exclusion list was determined by querying the Engineering and Facilities Database, querying the metrics resulting from Alert Production processing, and follow-up investigation of issues noticed by human operators.
 It is specified as a list of DataIds in JSON format.
 The configuration information includes a Science Pipelines tag (which in turn implies exact conda package builds in the environment), pex_config override files, YAML pipeline definitions, and overall workflow definitions.
-This culminates in a series of Batch Production Service (BPS) commands, each representing a workflow submission, that are to be executed, possibly with human analysis in between.
+This culminates in a series of Batch Production Service (BPS :cite:`2025ASPC..538..325G`) commands, each representing a workflow submission, that are to be executed, possibly with human analysis in between.
 Each workflow in turn results in multiple jobs being executed on the batch systems.
 Note that the Data Release Production is not expected to be run as a single workflow submission for a variety of reasons:
 
@@ -120,7 +120,7 @@ Being able to view the definitions of past campaigns and adjust the input datase
 The Scope
 =========
 
-The Campaign Management system sketched in the above use cases serves as a sort of electronic lab notebook, recording parameters and providing links to other systems that do the actual work of executing workflows or rendering plots.
+The Campaign Management system sketched in the above use cases (but also see additional requirements and use cases in LDM-633 :cite:`LDM-633` and LDM-636 :cite:`LDM-636`) serves as a sort of electronic lab notebook, recording parameters and providing links to other systems that do the actual work of executing workflows or rendering plots.
 It is a system to manage campaigns, not one to execute them, although rudimentary execution capabilities (submit the next BPS command in sequence) can be added in later versions.
 Its primary interfaces are human-oriented, not machine-oriented.
 It is usable by staff, including developers, Commissioning staff, and Execution team members.
@@ -128,8 +128,8 @@ It is not initially usable by science users, although with appropriate multi-use
 
 The generation of inclusion/exclusion lists is acknowledged to require extreme flexibility, with information coming from any available source, including a random number generator.
 As a result, only a format for specifying the exclusion list is defined; the mechanisms and tools for generating such a list are left outside the scope of Campaign Management.
-In particular, the Exposure Log (LSE-490 :cite:`LSE-490` §3.2.4.2 and DMTN-173 :cite:`DMTN-173`) cannot be sufficient to generate inclusion/exclusion lists; it is but one source of information that goes into their generation.
-Inclusion/exclusion lists must be uploaded to the Butler Registry in order to enable joins with other tables and in order to maintain provenance.
+In particular, the Exposure Log (LSE-490 :cite:`LSE-490` §3.2.4.2, TSTN-063 :cite:`TSTN-063`, and DMTN-173 :cite:`DMTN-173`) cannot be sufficient to generate inclusion/exclusion lists; it is but one source of information that goes into their generation.
+Inclusion/exclusion lists must be uploaded to the Butler Registry :cite:`DMTN-220` in order to enable joins with other tables and in order to maintain provenance.
 
 
 The Proposed Implementation
